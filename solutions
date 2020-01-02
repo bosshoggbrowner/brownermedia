@@ -90,8 +90,8 @@ body {
 <div class="header">
   <a href="#default" class="logo">Browner Media</a>
   <div class="header-right">
-    <a href="html_index.html">Home</a>
-    <a class="active" href="html_solutions">Our Solutions</a>
+    <a href="index.html">Home</a>
+    <a class="active" href="solutions">Our Solutions</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
   </div>
