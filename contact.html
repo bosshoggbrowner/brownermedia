@@ -151,18 +151,37 @@ body {
             <h2>Just Ask Me!</h2>
     </div>
 
-    <div class="contact-form">
-         <form id="contact-form" method="post" action="contact-form-handler.php">
-         <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-         <br>
-         <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
-             
-             <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea><br>
-             
-             <input type="submit" class="form-control submit" value="SEND MESSAGE">
-         
-         </form>
-     </div>
+    <form action = "POST" data-netlify="true">
+      <div class="fields">
+        <div class="field half">
+          <input type="text" name="name"
+                 id="name" placeholder="Name" />
+        </div>
+        <div class="field half">
+          <input type="email" name="email"
+                 id="email" placeholder="Email" />
+        </div>
+        <div class="field">
+          <textarea name="message" id="message"
+                    placeholder="Message"
+                    rows="7"></textarea>
+        </div>
+        <div class="field">
+          <input type="file" name="myfile" id="myfile"
+                    placeholder="Upload File"
+                    rows="7">
+        </div>
+        <div class="field">
+          <div
+               data-netlify-recaptcha="true"></div>
+          
+      </div>
+      <ul class="actions">
+        <li><input type="submit" value="Send Message" class="button primary" /></li>
+      </ul>
+  </form>
+  </div>
+        
         
   
    <div class="center">
