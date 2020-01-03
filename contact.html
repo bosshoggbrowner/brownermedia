@@ -147,8 +147,6 @@ input[type=submit]:hover {
   
 <title>Browner Media - Contact Us</title>
   
-  <script src="https://www.google.com/recaptcha/api.js'></script>
-  
 </head>
   
 <body>
@@ -185,10 +183,11 @@ input[type=submit]:hover {
                     placeholder="Upload File"
                     rows="7">
         </div>
-    </div>
-    
-    <div class="g-recaptcha" data-sitekey="6LcP5csUAAAAABR4iYpM9WQSBQCKGJW5Ggd8_vH-"></div>
-
+        <div class="field">
+          <div
+               data-netlify-recaptcha="true"></div>
+        </div>
+      </div>
       <ul class="actions">
         <li><input type="submit" value="Send Message" class="button primary" /></li>
       </ul>
